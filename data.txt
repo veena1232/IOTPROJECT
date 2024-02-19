@@ -1,0 +1,33 @@
+The solution we provide for Traffic management by having a special intelligence which the images of road feed from the cameras 
+(webcam or IP camera) at traffic junctions for real time traffic density calculation using image processing. It also focuses on
+ the algorithm for switching the traffic lights according to vehicle density on the road, thereby aiming at reducing the traffic 
+congestion on roads which will help lower the number of accidents. In turn, it will provide safe transit for people and reduce 
+fuel consumption and waiting time. It will also provide significant data which will help in future road planning and analysis. 
+In further stages multiple traffic lights can be synchronized with each other with an aim of even less traffic congestion and free
+ flow of traffic. The vehicles are detected by the system through images instead of using electronic sensors embedded in the pavement.
+ A camera will be placed alongside the traffic light. It will capture images sequences. Image processing is a better technique to 
+control the state change of the traffic light. It shows that it can decrease the traffic congestion and avoids the time being wasted by 
+a green light on an empty road. It is also more reliable in estimating vehicle presence because it uses actual traffic images.
+
+
+We propose a technique that can be used for traffic control using image processing.  According to the traffic densities on all roads,
+ our model will allocate smartly the time period of green light for each road. We have chosen image processing for calculation of
+ traffic density as cameras are very much cheaper than other devices such as sensors. The proposed model is constructed as follows:
+ We have a Raspberry Pi that is connected to 4 sets of LED that represent the traffic lights. It is the process of monitoring the 
+traffic density of each side and  change the signal according to the density in 2 direction.
+
+
+Each camera should be faced in each direction to monitor the traffic density by having a number of boundaries of each vehicle 
+on the road. When the traffic density of one direction is high, green signal will turn  in that direction and rest will be in red.
+ Similarly, by analyzing the order of traffic density traffic signal should be changed in every direction. So that traffic 
+signaling system becomes automatic using image processing through open CV and python.
+
+COMPONENTS INCLUDED
+Raspberry Pi
+Camera-2 (for 2 directions)
+LED for signals
+SOFTWARE USED
+Raspbian Jessie OS
+Python
+Open CV
+Apache
